@@ -5,7 +5,7 @@
 
 :root {
     --gap: 3rem;
-    --max-width: 80%;
+    --max-width: 70%;
 
     --black-color: #000000;
     --white-color: #ffffff;
@@ -381,8 +381,9 @@ ul {
 .position-button-enviar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: row;
+    width: 100%;
 }
 
 .button-enviar {
@@ -407,11 +408,12 @@ ul {
 }
 
 .text-box {
-    width: 500px;
-    height: 30vh;
+    width: 50%;
+    height: 52vh;
     padding: 5px;
     font-size: 1rem;
 }
+
 
 .container-below-buttons {
     width: 20%;
@@ -462,6 +464,7 @@ ul {
 }
 
 .container-variables {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -473,7 +476,6 @@ ul {
 }
 
 .progress-bar-line-container {
-    width: 100%;
     display: flex;
 }
 
@@ -500,6 +502,7 @@ ul {
     position: relative;
     top: -14px;
 }
+
 /*---------------------------------footer-------------------------------------*/
 .footer {
     background-color: var(--black-color);
@@ -544,7 +547,6 @@ ul {
 
     .section-fifth-container-above {
         flex-direction: column;
-        max-width: 500px;
         margin: auto;
         padding-top: 10%;
         gap: 0rem;
@@ -558,14 +560,12 @@ ul {
     .position-button-enviar {
         position: relative;
         top: 200px;
-        left: -100px;
     }
 
     .text-box {
         height: 150px;
         margin-bottom: 100px;
     }
-
 }
 
 @media screen and (max-width:800px) {
@@ -609,6 +609,13 @@ ul {
         margin-top: 10%;
     }
 
+    .container-variables {
+        width: 70%;
+    }
+
+    .text-box{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -649,14 +656,6 @@ ul {
         top: 40%;
     }
 
-    .text-box {
-        width: 450px;
-    }
-    
-    .position-button-enviar {
-        left: -75px;
-    }
-
     .shape {
         width: 450px;
     }
@@ -682,14 +681,6 @@ ul {
         top: 100%;
     }
 
-    .text-box {
-        width: 325px;
-    }
-
-    .position-button-enviar {
-        left: -12px;
-    }
-
     .shape {
         width: 325px;
     }
@@ -697,6 +688,14 @@ ul {
     .send-text {
         background-color: aqua;
         left: 5px;
+    }
+
+    .container-variables {
+        width: 90%;
+    }
+
+    .text-box{
+        width: 90%;
     }
 }
 
@@ -711,16 +710,11 @@ ul {
         width: 300px;
     }
 
-    .text-box {
-        width: 250px;
+    .container-variables {
+        width: 100%;
     }
 
-    .position-button-enviar {
-        left: 0%;
-        flex-direction: column;
-        top: 225px;
-        gap: 15px;
+    .text-box{
+        width: 100%;
     }
-
-    
 }
